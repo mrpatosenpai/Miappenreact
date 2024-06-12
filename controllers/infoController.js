@@ -51,7 +51,7 @@ static async details(req,res){
         connection=await mysql.createConnection(db)
         const [result] = await connection.execute("SELECT * FROM bob WHERE id = ?",[idb])
         console.log(result)
-        res.status(200).json(result)
+        //res.status(200).json(result)
     }catch(error){
         res.status(500).json({'error':error.message})
     }finally{
