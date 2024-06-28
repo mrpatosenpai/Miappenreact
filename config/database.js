@@ -1,9 +1,9 @@
 const db={
-    MYSQLHOST: "viaduct.proxy.rlwy.net",
-    portMYSQLPORT: 22191,
-    MYSQLUSER: "root",
-    MYSQLPASSWORD: "xkqACHITfXhIULKQHTHbHnuCXTaZVZgF",
-    MYSQLDATABASE: "railway"
+    host: "viaduct.proxy.rlwy.net",
+    port: 22191,
+    user: "root",
+    password: "xkqACHITfXhIULKQHTHbHnuCXTaZVZgF",
+    database: "railway"
 }
 
 export default db 
