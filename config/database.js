@@ -1,8 +1,8 @@
 const db={
     database: 'railway',
     host: 'viaduct.proxy.rlwy.net',
-    password: 'xkqACHITfXhIULKQHTHbHnuCXTaZVZgF',
-    port: 22191,
+    password: 'jFHrQmuJVzIjpQthMjLIGjPkGUPWFyXS',
+    port: 16968,
     user: 'root',
 }
 
