@@ -1,24 +1,30 @@
-import express, { Router } from 'express'
-import bodyParser from 'body-parser'
-import cors from 'cors'
-import routes from './config/routes.js'
+// index.js
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import routes from './config/routes.js';
 
-const app = express()
-const corsOption = {
-    origin:'miappenreact-production.up.railway.app' //localhost:3000
+const app = express();
 
-}
+const corsOptions = {
+    origin: '*' // O cambia esto por tu dominio específico
+};
 
-//configuracion del middleword
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json())
+// Configuración del middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(cors(corsOptions));
 
-app.use('/api',cors(corsOption),routes)
+// Rutas
+app.use('/api', routes);
 
-app.get('/',(req,res)=>res.send('Bienvenidos a mi API :D'))
+// Ruta de prueba para el índice
+app.get('/', (req, res) => res.send('Bienvenidos a mi API :D'));
 
-const server =app.listen(process.env.PORT || 8000,()=>{
-    console.log(`Servidor corriendose en puerto: ${server.address().port}}`)
-})
+// Inicio del servidor
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en el puerto: ${PORT}`);
+});
 
-export default app
+export default app;
