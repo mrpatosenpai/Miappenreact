@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon --exec babel-node index",
-    "test": "cross-env NODE_ENV=test nodemon --exec mocha --require @babel/register"
+    "start": "node -r cross-env NODE_ENV=development nodemon --exec babel-node index.js",
+    "test": "node -r cross-env NODE_ENV=test nodemon --exec mocha --require @babel/register"
   },
   "author": "juan",
   "license": "ISC",
