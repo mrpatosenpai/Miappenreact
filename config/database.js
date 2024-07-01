@@ -1,4 +1,4 @@
-/* const db={
+const db={
     database: 'railway',
     host: 'viaduct.proxy.rlwy.net',
     password: 'xkqACHITfXhIULKQHTHbHnuCXTaZVZgF',
@@ -6,7 +6,7 @@
     user: 'root',
 }
 
-export default db  */
+export default db  
 /* const db = {
     RAILWAY_RDS_HOSTNAME:" viaduct.proxy.rlwy.net",
     RAILWAY_RDS_PORT: 22191,
@@ -15,7 +15,7 @@ export default db  */
     RAILWAY_RDS_DB_NAME: "railway"
 }; 
 export default db */
-import dotenv from 'dotenv';
+/* import dotenv from 'dotenv';
 dotenv.config();
 
 const db = {
@@ -26,4 +26,4 @@ const db = {
     database: process.env.DB_NAME
 };
 
-export default db;
+export default db; */

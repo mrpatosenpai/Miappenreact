@@ -7,7 +7,7 @@ import routes from './config/routes.js';
 const app = express();
 
 const corsOptions = {
-    origin: 'https://miappenreact-production.up.railway.app/' // Cambia esto por el dominio de tu aplicación
+    origin: '*' // Cambia esto por el dominio de tu aplicación
 };
 
 // Configuración del middleware
