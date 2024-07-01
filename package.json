@@ -4,13 +4,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=development npx nodemon --exec npx babel-node index.js",
-    "test": "cross-env NODE_ENV=test npx nodemon --exec npx mocha --require @babel/register"
-  },
+  "start": "set NODE_ENV=development&& nodemon --exec babel-node index.js",
+  "test": "set NODE_ENV=test&& nodemon --exec mocha --require @babel/register"
+},
   "author": "juan",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@babel/node": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -22,7 +23,6 @@
   "devDependencies": {
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",
-    "@babel/node": "^7.24.7",
     "@babel/register": "^7.24.6",
     "@types/faker": "^6.6.9",
     "chai": "^5.1.1",
@@ -30,6 +30,6 @@
     "cross-env": "^7.0.3",
     "faker": "^6.6.6",
     "mocha": "^10.4.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.3"
   }
 }
