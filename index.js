@@ -5,7 +5,7 @@ import routes from './config/routes.js'
 
 const app = express()
 const corsOption = {
-    origin:'https://miappenreact-production.up.railway.app' //localhost:3000
+    origin:'*' //localhost:3000
 
 }
 
