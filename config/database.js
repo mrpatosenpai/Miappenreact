@@ -1,9 +1,9 @@
 const db={
-    host: "viaduct.proxy.rlwy.net",
-    port:22191,
-    user: "root",
-    password: "xkqACHITfXhIULKQHTHbHnuCXTaZVZgF",
-    database: "railway"
+    database: 'railway',
+    host: 'viaduct.proxy.rlwy.net',
+    password: 'xkqACHITfXhIULKQHTHbHnuCXTaZVZgF',
+    port: 22191,
+    user: 'root',
 }
 
 export default db 
